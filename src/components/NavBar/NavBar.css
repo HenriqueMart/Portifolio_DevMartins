@@ -1,0 +1,101 @@
+/*NavBar.css*/
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 10px;
+    background: var(--color-second);
+}
+
+.NavLinks{
+    height: 10vh;
+}
+
+nav ul{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+nav ul li{
+    list-style-type: none;
+    display: inline-block;
+    padding: 10px 20px;
+}
+
+nav ul li a{
+    text-decoration: none;
+    font-weight: bold;
+    color: var(--color-text_first);
+    font-family: var(--font-second);
+    font-size: 14px;
+    font-weight: bolder;
+}
+
+nav ul li a:hover{
+    color: var(--color-text_second);
+    transition: .3s;
+}
+
+.Logo{
+    font-size: 30px;
+    color: var(--color-text_second);
+    font-family: var(--font-first);
+}
+
+.MobileNavigation{
+    display: none;;
+}
+
+
+/*Hamburger nos dispositivos móveis*/
+@media (max-width: 768px) {
+    
+    .DesktopNavigation{
+        display: none;
+    }
+
+    .HamburgerMenu{
+        transition: all 0.5s ease;
+    }
+    .MobileNavigation{
+        display: flex;
+        align-items: center;
+        height: 15vh;
+        
+    }
+    .MobileNavigation > nav ul{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        align-items: center;
+        justify-items: flex-start;
+        gap: 20px;
+    }
+
+    .MobileNavigation > nav li{
+        border-bottom: 1px solid var(--color-text_second);
+        width: 50%;
+        height: 100%;
+        text-align: center;
+    }
+
+    .MobileNavigation > nav a{
+        font-size: 20px;
+    }
+
+    .NavLinks{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+        position: absolute;
+        border-top: 3px solid var(--color-second);
+        top: 15vh;
+        right: 0;
+        height: 50%;
+        width: 100%;
+        background: var(--color-first);
+    }
+
+}
