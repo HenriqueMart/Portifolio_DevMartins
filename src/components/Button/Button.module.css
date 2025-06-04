@@ -1,0 +1,17 @@
+Button{
+    background-color: var(--color-text_second);
+    color: var(--color-text_first);
+    font-family: var(--font-first);
+    font-size: 16px;
+    font-weight: 500;
+    padding: 10px;
+    border: 0;
+    border-radius: 10px;
+    margin-top: 10px;
+    cursor: pointer;
+}
+Button:hover{
+    transition: 0.8s;
+    background-color: var(--color-text_first);
+    color: var(--color-text_second);
+}
