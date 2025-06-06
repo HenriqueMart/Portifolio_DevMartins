@@ -1,6 +1,6 @@
 import Button from '../Button/Button';
 import Style from './HomePage.module.css';
-import img from '../../img/personagem.webp'
+import img from '../../img/personagem.webp';
 
 export default function HomePage(){
     const url = 'https://drive.google.com/file/d/1aDriHBRkWsnkzxjwSpVypfxemdQD0Lr0/view?usp=drive_link';
@@ -21,14 +21,18 @@ export default function HomePage(){
                     </article>
                     <section className={Style.section2} >
                         <div className={Style.section2_elementos}>
-                            <div className='section2_elementos_titulo'>
-                                <h1>Titulo</h1>
-                                <h2>subTitulo</h2>
-                                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Assumenda laborum velit perspiciatis nesciunt officia iusto vel minima ducimus accusamus libero ipsa explicabo ipsam, nihil id iste, similique vero, dolor incidunt?</p>
-                            </div>
                             <figure className={Style.section2_figure}>
                                 <img src={img} alt="minha imagens" />
                         </figure>
+                            <div className={Style.section2_elementos_titulo}>
+                                <h1>Sobre</h1>
+                                <h2>Quem é Henrique Martins?</h2>
+                                <p>Sou cristão, tenho 22 anos e sou apaixonado por tecnologia e como ela pode transformar e contribuir na evolução da nossa sociedade. Buscando resolver diversos problemas do cotidiano.</p>
+                                <p>Tenho experiência no desenvolvimento web como freelancer e no desenvolvimento do projeto Cidade Inteligente com a parceria da Prefeitura e IFBA que atuo atualmente. Nesse projeto atuo como Analista e mapeador de processo e desenvolvedor Web. Sempre encontrando soluções e propondo novas abordagem por meio da tecnologia.</p>
+                                <p>Na programação, atualmente utilizo e estudo tecnologia como JavaScript e React, Java com Spring Boot, HTML e CSS. Utilizando essas tecnologias para aplicações e site. Wordpress para Paginas institucional. Utilizando metodologia ágil.</p>
+                                <p>Sempre evoluindo e aprendendo novas abordagem para propor novas soluções por meio da tecnologia.</p>
+                            </div>
+                            
                         </div>
                     </section>
                 </main>    
