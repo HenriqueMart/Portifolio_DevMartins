@@ -1,4 +1,4 @@
-import Button from '../Button/Button';
+import Button from '../../components/Button/Button';
 import Style from './HomePage.module.css';
 import img from '../../img/personagem.webp';
 
@@ -32,7 +32,13 @@ export default function HomePage(){
                                 <p>Na programação, atualmente utilizo e estudo tecnologia como JavaScript e React, Java com Spring Boot, HTML e CSS. Utilizando essas tecnologias para aplicações e site. Wordpress para Paginas institucional. Utilizando metodologia ágil.</p>
                                 <p>Sempre evoluindo e aprendendo novas abordagem para propor novas soluções por meio da tecnologia.</p>
                             </div>
-                            
+                        </div>
+                    </section>
+                    <section className={Style.section3}>
+                        <div className={Style.section3_elementos}>
+                            <div className={Style.section3_elementos_titulo}>
+                                <h1>Projetos</h1>
+                                </div>
                         </div>
                     </section>
                 </main>    
