@@ -1,6 +1,11 @@
+/*Components  */
 import Button from '../../components/Button/Button';
 import Style from './HomePage.module.css';
+import {Card} from '../../components/Card/Card.jsx';
+
+/*Elementos */
 import img from '../../img/personagem.webp';
+import card1 from '../../img/projects/card1.webp';
 
 export default function HomePage(){
     const url = 'https://drive.google.com/file/d/1aDriHBRkWsnkzxjwSpVypfxemdQD0Lr0/view?usp=drive_link';
@@ -38,7 +43,37 @@ export default function HomePage(){
                         <div className={Style.section3_elementos}>
                             <div className={Style.section3_elementos_titulo}>
                                 <h1>Projetos</h1>
-                                </div>
+                            </div>
+                            <div className={Style.section3_elementos_card}>
+                                    <Card 
+                                        img={card1}
+                                        titule="Estoque Atakado"
+                                        descricao="Sistema de Gestão de Produto em estoque para mercado. Permitindo um controle e detalhe dos itens armazenando. Com todas as operações básica, salvar, atualizar, listar e excluir. Sendo uma aplicação completa do Front-end ao Back-end."
+                                        code="https://github.com/HenriqueMart/estoqueAtakado"
+                                        deploy="https://henriquemart.github.io/estoqueAtakado/"
+                                    />
+                                    <Card 
+                                        img={card1}
+                                        titule="Estoque Atakado"
+                                        descricao="Sistema de Gestão de Produto em estoque para mercado. Permitindo um controle e detalhe dos itens armazenando. Com todas as operações básica, salvar, atualizar, listar e excluir. Sendo uma aplicação completa do Front-end ao Back-end."
+                                        code="https://github.com/HenriqueMart/estoqueAtakado"
+                                        deploy="https://henriquemart.github.io/estoqueAtakado/"
+                                    />
+                                    <Card 
+                                        img={card1}
+                                        titule="Estoque Atakado"
+                                        descricao="Sistema de Gestão de Produto em estoque para mercado. Permitindo um controle e detalhe dos itens armazenando. Com todas as operações básica, salvar, atualizar, listar e excluir. Sendo uma aplicação completa do Front-end ao Back-end."
+                                        code="https://github.com/HenriqueMart/estoqueAtakado"
+                                        deploy="https://henriquemart.github.io/estoqueAtakado/"
+                                    />
+                                    <Card 
+                                        img={card1}
+                                        titule="Estoque Atakado"
+                                        descricao="Sistema de Gestão de Produto em estoque para mercado. Permitindo um controle e detalhe dos itens armazenando. Com todas as operações básica, salvar, atualizar, listar e excluir. Sendo uma aplicação completa do Front-end ao Back-end."
+                                        code="https://github.com/HenriqueMart/estoqueAtakado"
+                                        deploy="https://henriquemart.github.io/estoqueAtakado/"
+                                    />
+                            </div>
                         </div>
                     </section>
                 </main>    
