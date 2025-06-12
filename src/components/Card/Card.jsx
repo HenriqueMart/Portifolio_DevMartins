@@ -1,8 +1,11 @@
 import Style from './Card.module.css';
 import Button from '../Button/Button';
+import { Tag } from './Tag/Tag';
 
 
-export function Card({img, titule, descricao, deploy, code}){
+export function Card({img, titule, descricao, deploy, code, tech = []}){
+    console.log(tech);
+    
     return(
         <>
             <div className={Style.container}>
@@ -16,16 +19,23 @@ export function Card({img, titule, descricao, deploy, code}){
                             
                     </div>
                     <div className={Style.tech}>
-                        <p >Tecnologia: </p>
+                        <p >Tecnologia:</p> 
+                        {tech.map((item, index) => ( // Lógica para Tag passada por props por array
+                            <Tag key={index} tech={item}/>
+                        ))}
                     </div>
                     <div className={Style.button}>{
                         deploy && (
-                            <a href={deploy} target='_blank'>
+                            <a href={deploy}
+                            target='_blank'
+                            >
                                 <Button title="Visualizar"/>
                             </a>
                         )}
                         {code && (
-                            <a href={code} target='_blank'>
+                            <a href={code} 
+                            target='_blank'
+                            >
                                 <Button title="Código"/>
                             </a>
                             

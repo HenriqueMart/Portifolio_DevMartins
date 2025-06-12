@@ -43,6 +43,8 @@
 }
 
 .tech{
+    display: flex;
+    gap: 5px;
     margin: 0 0.75rem;
     font-size: 8px;
     font-weight: bolder;

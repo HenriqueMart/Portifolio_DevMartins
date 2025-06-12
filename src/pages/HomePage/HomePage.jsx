@@ -51,6 +51,8 @@ export default function HomePage(){
                                         descricao="Sistema de Gestão de Produto em estoque para mercado. Permitindo um controle e detalhe dos itens armazenando. Com todas as operações básica, salvar, atualizar, listar e excluir. Sendo uma aplicação completa do Front-end ao Back-end."
                                         code="https://github.com/HenriqueMart/estoqueAtakado"
                                         deploy="https://henriquemart.github.io/estoqueAtakado/"
+                                        tech={['React','JavaScript']}
+                                        
                                     />
                                     <Card 
                                         img={card1}
