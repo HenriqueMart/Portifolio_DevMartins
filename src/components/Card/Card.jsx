@@ -26,18 +26,25 @@ export function Card({img, titule, descricao, deploy, code, tech = []}){
                     </div>
                     <div className={Style.button}>{
                         deploy && (
-                            <a href={deploy}
-                            target='_blank'
-                            >
-                                <Button title="Visualizar"/>
-                            </a>
+                            
+                                <button>
+                                    <a 
+                                    href={deploy}
+                                    target='_blank'>
+                                    Visualizar
+                                    </a>
+                                </button>
+                            
                         )}
                         {code && (
-                            <a href={code} 
-                            target='_blank'
-                            >
-                                <Button title="Código"/>
-                            </a>
+                            
+                                <button><a 
+                                    href={code} 
+                                    target='_blank'>
+                                    Código
+                                    </a>
+                                </button>
+                            
                             
                         )}
                         

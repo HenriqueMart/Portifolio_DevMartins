@@ -135,6 +135,14 @@ h1{
     margin: 0 1rem;
 }
 
+/*Section 4*/
+
+.section4{
+    height: 100vh;
+    width: 100%;
+    background-color: var(--color-first);
+}
+
 @media (max-width: 768px) {
     /*Main*/
     .Main_apresentacao{

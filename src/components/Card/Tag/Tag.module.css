@@ -1,11 +1,19 @@
 .tag{
     display: flex;
-    flex-direction: row;
-    padding: 0 2px;
+    flex-wrap: wrap; /* Isso permite que os itens flexíveis (.tag p) quebrem para a próxima linha */
+    gap: 4px;
+}
+
+.tag p{
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0 4px;
     border-radius: 2px;
     font-size: 0.5rem;
     background-color: var(--color-text_second);
     font-family: var(--font-first);
     color: var(--color-third);
     font-weight: 600;
+    text-align: center;
 }
